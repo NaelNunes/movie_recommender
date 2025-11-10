@@ -51,7 +51,7 @@ namespace MovieRecommender.API.Controllers
             public List<string> Titles { get; set; } = new();
         }
 
-        [HttpPost("create")]
+        [HttpPost("seed")]
         public async Task<IActionResult> Seed([FromBody] SeedRequest request)
         {
             if (request == null || request.Titles == null || request.Titles.Count == 0)
@@ -77,7 +77,7 @@ namespace MovieRecommender.API.Controllers
             public int Count { get; set; } = 200;
         }
 
-        [HttpPost("sendmovies/")]
+        [HttpPost("seed/popular/")]
         public async Task<IActionResult> SeedPopular([FromBody] SeedPopularRequest request)
         {
             if (request == null || request.Count <= 0)
