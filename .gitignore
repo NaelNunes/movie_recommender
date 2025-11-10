@@ -1,0 +1,70 @@
+# Root .gitignore for MovieRecommender
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite / dev cache
+node_modules/.vite/
+.vite/
+
+# Build output
+dist/
+build/
+coverage/
+coverage-final.json
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# .NET build
+bin/
+obj/
+*/bin/
+*/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / Code
+.vs/
+.vscode/
+.idea/
+
+# Database and local data
+*.db
+*.sqlite
+*.sqlite3
+movies.db
+
+# Secrets, certificates, keys
+*.pfx
+*.pem
+*.key
+secrets.json
+
+# Application settings that may contain secrets
+# Ignore development-specific appsettings files
+appsettings.Development.json
+appsettings.*.json
+
+# NuGet/packages
+*.nupkg
+project.lock.json
+artifacts/
+
+# Publish output
+publish/
